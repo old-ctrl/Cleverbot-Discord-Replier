@@ -51,7 +51,7 @@ class DiscordCleverbot:
     def send_discord_message(self, channel_id, message):
         url = f"https://discord.com/api/v9/channels/{channel_id}/messages"
         headers = {
-            "Authorization": f"Bearer {self.token}",
+            "Authorization": f"{self.token}",
             "Content-Type": "application/json"
         }
         data = {"content": message, "tts": False}
